@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Pet Feeding Organization. We strive to support stray animals with feeding and care.">
+    <title>Home - Pet Feeding Organization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        Pet Feeding Organization
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="image"></div>
+        <div class="text">
+            <h1>Welcome to the Pet Feeding Organization</h1>
+            <p>Helping stray animals one meal at a time. Join us in making a difference.</p>
+            <p> Our mission is to support each and every stray animal on this planet, to achieve this goal we need your help.</p>
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <div class="slides">
+            <div class="slide">
+                <img src="images.jpg" alt="Stray Dog 1">
+            </div>
+            <div class="slide">
+                <img src="download.jpg" alt="Stray Dog 2">
+            </div>
+            <div class="slide">
+                <img src="images (1).jpg" alt="Stray Dog 3">
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlides(1)">&#10095;</button>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>We are a non-profit organization dedicated to providing food, care, and shelter to stray animals. Our goal is to ensure every animal is fed and cared for, especially in tough times.</p>
+        <button class="cta-btn" onclick="window.location.href='contact.html'">Get Involved</button>
+    </div>
+
+    <footer>
+        &copy; 2024 Pet Feeding Organization. All Rights Reserved.
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

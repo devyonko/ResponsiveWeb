@@ -1,0 +1,306 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff9e6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #ffc107;
+    padding: 1em 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section - Image and Text Split */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 2em;
+    background-color: #fff;
+}
+
+.hero .image {
+    flex: 1;
+    background: url('https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/activities-fun/10-great-small-dog-breeds/maltese-portrait.jpg?h=448&w=740&hash=B111F1998758CA0ED2442A4928D5105D') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.hero .text {
+    flex: 1;
+    padding: 0 2em;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* About Section */
+.about-section {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    color: #555;
+}
+
+.about-section .cta-btn {
+    padding: 1em 2em;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.about-section .cta-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background: #ffc107;
+    color: #fff;
+    margin-top: 3em;
+    font-size: 1em;
+}
+
+/* Slideshow Style */
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    height: 70vh; /* Increased height to 70% of the viewport height */
+    margin: 2em 0;
+    background-color: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%; /* Ensure that each slide takes full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%; /* Ensure the image fills the width of the slide */
+    height: 100%; /* Ensure the image fills the height of the slide */
+    object-fit: cover; /* Make sure the image covers the slide container */
+}
+
+/* Slide Navigation */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 3em 1em;
+    }
+
+    .hero .image {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .slideshow {
+        height: 50vh; /* Adjust the height of the slideshow for mobile to 50% */
+    }
+}
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff9e6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #ffc107;
+    padding: 1em 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #ffffff;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #ffc107;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.contact-form .submit-btn {
+    padding: 1em;
+    background: #ffc107;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form .submit-btn:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
+.contact-form .submit-btn:active {
+    background: #c79100;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #ffc107;
+    color: #fff;
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5em;
+    }
+}
